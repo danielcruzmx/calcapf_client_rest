@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<mappings  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+   xmlns='http://dozer.sourceforge.net'
+   xsi:schemaLocation='http://dozer.sourceforge.net 
+                   http://dozer.sourceforge.net/schema/beanmapping.xsd'>
+ 
+  <mapping>
+    <class-a>data.PagoDB</class-a>
+    <class-b>main.Pago</class-b>
+    <field-exclude>
+        <a>conceptos</a>
+        <b>conceptos</b>
+    </field-exclude>
+    <field-exclude>
+        <a>pensiones</a>
+        <b>pensiones</b>
+    </field-exclude>
+    <field-exclude>
+        <a>conceptosPagados</a>
+        <b>conceptosPagados</b>
+    </field-exclude>
+  </mapping>
+ 
+  <mapping>
+    <class-a>data.PensionDB</class-a>
+    <class-b>main.Pension</class-b>
+    <field>
+        <a>numPension</a>
+        <b>numero</b>
+    </field>
+    <field>
+        <a>beneficiariaPension</a>
+        <b>beneficiario</b>
+    </field>
+    <field>
+        <a>montoPension</a>
+        <b>monto</b>
+    </field>
+    <field>
+        <a>porcentajePension</a>
+        <b>porcentaje</b>
+    </field>
+    <field>
+        <a>cptosPorcentaje</a>
+        <b>conceptos</b>
+    </field>
+  </mapping> 
+  
+  <mapping>
+    <class-a>data.ConceptoPagoDB</class-a>
+    <class-b>main.ConceptoPago</class-b>
+    <field>
+        <a>monto</a>
+        <b>valor</b>
+    </field>
+  </mapping> 
+ 
+ 
+</mappings>
+
